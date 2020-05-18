@@ -1,0 +1,17 @@
+{
+  "name": "beaconApp",
+  "displayName": "beaconApp",
+  "expo": {
+    "name": "beaconApp",
+    "slug": "beaconApp",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
