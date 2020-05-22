@@ -41,8 +41,10 @@ useEffect(() => {
 dados.map(Element=>
   {console.log('sinal',Element.distance)
 
-  if (((Element.distance-dist)>0.7)||((dist-Element.distance)>0.7)){
-    setDist(Element.distance)
+  if (((Element.distance-dist)>0.5)||((dist-Element.distance)>0.5)){
+    
+    setTimeout(() => {  setDist(Element.distance)}, 1000);
+    
   }
   
 });
