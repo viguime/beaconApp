@@ -34,18 +34,18 @@ useEffect(() => {
 
   DeviceEventEmitter.addListener('beaconsDidRange', (data) => {
  // console.log('Found beacons!', data.beacons)
-  setDados(data.beacons)
+  setTimeout(() => {  setDados(data.beacons)}, 1000);
 })
 },[]);
 
 dados.map(Element=>
   {console.log('sinal',Element.distance)
 
-  if (((Element.distance-dist)>0.5)||((dist-Element.distance)>0.5)){
+ if (((Element.distance-dist)>0.01)||((dist-Element.distance)>0.01)){
     
     setTimeout(() => {  setDist(Element.distance)}, 1000);
     
-  }
+}
   
 });
 
